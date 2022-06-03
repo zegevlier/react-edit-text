@@ -148,6 +148,7 @@ export default function EditText({
     return controlled ? (
       <Input
         {...sharedProps}
+        maxLength={250}
         value={value}
         onChange={(e) => {
           setChangeEvent(e);
@@ -158,6 +159,7 @@ export default function EditText({
     ) : (
       <Input
         {...sharedProps}
+        maxLength={250}
         defaultValue={savedText}
         inputClassName={inputClassName}
       />
